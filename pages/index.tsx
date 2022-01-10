@@ -18,7 +18,17 @@ import { NFT } from "solana-nft"
 <NFT id="<token_account_id>" height={600} width={600} style={{ borderRadius: "50%" }} />
 `;
 
-function Card({ title, description, footer, children }) {
+function Card({
+  title,
+  description,
+  footer,
+  children,
+}: {
+  title: string;
+  description: string;
+  footer: React.ReactChild;
+  children: React.ReactChild;
+}) {
   return (
     <div className="border border-accents-1	max-w-3xl w-full p rounded-md m-auto my-8">
       <div className="px-5 py-4">
